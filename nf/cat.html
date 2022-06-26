@@ -15,28 +15,43 @@
     <p id="pause">(Paused)</p>
   </div>
 
-<audio id="song" loop>
-  <source src="losing.mp3" type="audio/mp3">
-</audio>
-
-<script>
-  var m = document.getElementById("song");
-  var n = document.getElementById("icon");
-  var o = document.getElementById("pause");  
-  icon.onclick = function() {
-  if(m.paused) {
-    m.play();
-    n.classList.remove("fa-solid", "fa-heart-crack");
-    n.classList.add("fa-solid", "fa-heart");
-    o.innerHTML = "(Playing...)";
-  } else {
-    m.pause();
-    n.classList.remove("fa-solid", "fa-heart");
-    n.classList.add("fa-solid", "fa-heart-crack");  
-    o.innerHTML = "(Paused)";    
-  }
-}
-</script>
+  <audio id="music">
+    <source src="losing.mp3" type="audio/mp3">
+  </audio>
+  <audio id="song">
+    <source src="sunshine.mp3" type="audio/mp3">
+  </audio>
+  
+  <script>
+    var song = document.getElementById('song');
+    var music = document.getElementById('music');
+    var icon = document.getElementById('icon');
+    var pause = document.getElementById('pause');
+    var play = true;
+    icon.addEventListener('click', function(){
+      if(play){
+        music.play();
+        music.addEventListener('ended', function(){
+          song.play();      
+        });
+        song.addEventListener('ended', function(){
+          music.play();
+        });
+        icon.classList.remove('fa-heart-crack');
+        icon.classList.add('fa-heart');
+        pause.innerHTML = '(Playing)';
+        play = false;
+      }else{
+        music.pause();
+        song.pause();
+        icon.classList.remove('fa-heart');
+        icon.classList.add('fa-heart-crack');
+        pause.innerHTML = '(Paused)';
+        play = true;
+      }
+    });
+  </script> 
+  
 <div class="all-wrap">  
   <div class="all">
     <div class="yarn"></div>
