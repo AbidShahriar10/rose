@@ -1,22 +1,22 @@
-.music{
+.music {
   display: flex;
   align-items: center;
 }
-.music p{
+.music p {
   margin: 10px;
   cursor: text;
   font-size: 20px;
 }
-.music .fa-solid{
+.music .fa-solid {
   cursor: pointer;
 }
-.music .fa-arrow-right-long{
+.music .fa-arrow-right-long {
   cursor: text;
 }
 
 .all-wrap {
   -webkit-animation: bob 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
-          animation: bob 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
+  animation: bob 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
 }
 
 .all {
@@ -27,12 +27,12 @@
   height: 5rem;
   transform-origin: center -20rem;
   -webkit-animation: swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
-          animation: swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
+  animation: swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
 }
 .all:before {
   height: 20rem;
   width: 2px;
-  background-color: #DB242A;
+  background-color: #db242a;
   left: calc(50% - 1px);
   bottom: 20rem;
 }
@@ -44,10 +44,16 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-image: radial-gradient(circle at top left, #e97c7f, #DB242A 50%, #af1d22);
+  background-image: radial-gradient(
+    circle at top left,
+    #e97c7f,
+    #db242a 50%,
+    #af1d22
+  );
   z-index: 1;
 }
-.yarn:before, .yarn:after {
+.yarn:before,
+.yarn:after {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -61,7 +67,7 @@
 }
 .yarn:after {
   right: calc(50% + 7px);
-  background-color: #D5E8F8;
+  background-color: #d5e8f8;
 }
 
 .cat-wrap {
@@ -71,7 +77,7 @@
   width: 90px;
   height: 130px;
   -webkit-animation: reverse-swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
-          animation: reverse-swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
+  animation: reverse-swing 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
   transform-origin: top center;
 }
 
@@ -82,7 +88,7 @@
   width: 100%;
   height: 100%;
   -webkit-animation: swing 7s 0.2s infinite both;
-          animation: swing 7s 0.2s infinite both;
+  animation: swing 7s 0.2s infinite both;
   transform-origin: top center;
 }
 
@@ -101,7 +107,7 @@
   height: 100%;
   background-color: white;
   z-index: -1;
-  background-image: linear-gradient(to right, #D5E8F8, #D5E8F8 20%, #8B9BD9);
+  background-image: linear-gradient(to right, #d5e8f8, #d5e8f8 20%, #8b9bd9);
 }
 .cat-upper .cat-leg:nth-child(1) {
   border-top-left-radius: 100px;
@@ -127,7 +133,7 @@
   width: 75px;
   left: calc(50% - 37.5px);
   -webkit-animation: reverse-swing 7s 0.2s infinite both;
-          animation: reverse-swing 7s 0.2s infinite both;
+  animation: reverse-swing 7s 0.2s infinite both;
   transform-origin: top center;
 }
 
@@ -138,7 +144,7 @@
   width: 100%;
   height: 100%;
   -webkit-animation: swing 7s 0.5s infinite both;
-          animation: swing 7s 0.5s infinite both;
+  animation: swing 7s 0.5s infinite both;
   transform-origin: top center;
 }
 .cat-lower:after {
@@ -148,21 +154,28 @@
   width: 100%;
   height: 100%;
   border-radius: 100px;
-  background-image: radial-gradient(circle at 10px 50px, white, white 40%, #D5E8F8 65%, #8B9BD9);
+  background-image: radial-gradient(
+    circle at 10px 50px,
+    white,
+    white 40%,
+    #d5e8f8 65%,
+    #8b9bd9
+  );
   z-index: 1;
 }
-.cat-lower .cat-leg, .cat-lower .cat-paw {
+.cat-lower .cat-leg,
+.cat-lower .cat-paw {
   z-index: -1;
   position: absolute;
   height: 20px;
   width: 20px;
   -webkit-animation: swing-leg 7s 0.3s infinite both;
-          animation: swing-leg 7s 0.3s infinite both;
+  animation: swing-leg 7s 0.3s infinite both;
   z-index: 1;
   transform-origin: top center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-image: linear-gradient(to right, white, #D5E8F8, #8B9BD9);
+  background-image: linear-gradient(to right, white, #d5e8f8, #8b9bd9);
 }
 .cat-lower > .cat-leg {
   bottom: 20px;
@@ -183,10 +196,10 @@
   height: 15px;
   width: 10px;
   -webkit-animation: swing-tail 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
-          animation: swing-tail 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
+  animation: swing-tail 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
   transform-origin: top center;
   z-index: 0;
-  background-image: linear-gradient(to right, white, #D5E8F8, #8B9BD9);
+  background-image: linear-gradient(to right, white, #d5e8f8, #8b9bd9);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -201,7 +214,13 @@
 .cat-head {
   width: 90px;
   height: 90px;
-  background-image: radial-gradient(circle at 10px 10px, white, white 40%, #D5E8F8 65%, #8B9BD9);
+  background-image: radial-gradient(
+    circle at 10px 10px,
+    white,
+    white 40%,
+    #d5e8f8 65%,
+    #8b9bd9
+  );
   border-radius: 50%;
   top: calc(100% - 45px);
 }
@@ -213,7 +232,7 @@
   height: 100%;
   width: 100%;
   -webkit-animation: face 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
-          animation: face 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
+  animation: face 7s cubic-bezier(0.5, 0, 0.5, 1) infinite both;
   transform-style: preserve-3d;
   perspective: 100px;
 }
@@ -244,7 +263,7 @@
   left: 0;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  background-color: #D7EBFB;
+  background-color: #d7ebfb;
 }
 .cat-ear:last-child {
   right: 0;
@@ -272,14 +291,15 @@
   width: 100%;
   height: 6px;
   -webkit-animation: blink 7s step-end infinite both;
-          animation: blink 7s step-end infinite both;
+  animation: blink 7s step-end infinite both;
 }
-.cat-eyes:before, .cat-eyes:after {
+.cat-eyes:before,
+.cat-eyes:after {
   position: absolute;
   height: 6px;
   width: 6px;
   border-radius: 50%;
-  background-color: #4B4D75;
+  background-color: #4b4d75;
 }
 .cat-eyes:before {
   left: 20px;
@@ -292,7 +312,7 @@
   position: absolute;
   width: 12px;
   height: 8px;
-  background-color: #4B4D75;
+  background-color: #4b4d75;
   top: 60%;
   left: calc(50% - 6px);
   border-top-left-radius: 50% 30%;
@@ -301,11 +321,12 @@
   border-bottom-right-radius: 50% 70%;
   transform: translateZ(10px);
 }
-.cat-mouth:before, .cat-mouth:after {
+.cat-mouth:before,
+.cat-mouth:after {
   position: absolute;
   width: 90%;
   height: 100%;
-  border: 2px solid #9FA2CB;
+  border: 2px solid #9fa2cb;
   top: 80%;
   border-radius: 100px;
   border-top-color: transparent;
@@ -333,11 +354,12 @@
   transform-style: preserve-3d;
   perspective: 60px;
 }
-.cat-whiskers:before, .cat-whiskers:after {
+.cat-whiskers:before,
+.cat-whiskers:after {
   position: absolute;
   height: 100%;
   width: 30%;
-  border: 2px solid #9FA2CB;
+  border: 2px solid #9fa2cb;
   border-left: none;
   border-right: none;
 }
@@ -766,22 +788,35 @@
   }
 }
 @-webkit-keyframes blink {
-  from, to, 10%, 25%, 80% {
+  from,
+  to,
+  10%,
+  25%,
+  80% {
     transform: scaleY(1);
   }
-  8%, 23%, 78% {
+  8%,
+  23%,
+  78% {
     transform: scaleY(0.1);
   }
 }
 @keyframes blink {
-  from, to, 10%, 25%, 80% {
+  from,
+  to,
+  10%,
+  25%,
+  80% {
     transform: scaleY(1);
   }
-  8%, 23%, 78% {
+  8%,
+  23%,
+  78% {
     transform: scaleY(0.1);
   }
 }
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -790,16 +825,19 @@ body, html {
   overflow: hidden;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   position: relative;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
-          animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-*:before, *:after {
+*:before,
+*:after {
   content: "";
   display: block;
 }
