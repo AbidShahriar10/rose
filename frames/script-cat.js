@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //start-animation
   function initAni() {
-    const tl = new TimelineMax({ delay: 11, onComplete: logoVisible });
-    const tl_eye = new TimelineMax({ delay: 12, repeat: 3, repeatDelay: 1 });
+    const tl = new TimelineMax({ delay: 8, onComplete: logoVisible });
+    const tl_eye = new TimelineMax({ delay: 9, repeat: 3, repeatDelay: 1 });
     resetit();
     logonotVisible();
     tl.to([head, eyes, ears], 0.2, { y: 45, x: 30 })
