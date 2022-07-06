@@ -27,6 +27,12 @@
       <source src="../music/dream.mp3" type="audio/mp3" />
     </audio>
     <audio id="music3">
+      <source src="../music/arpeggio.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="music4">
+      <source src="../music/pain.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="music5">
       <source src="../music/sad.mp3" type="audio/mp3" />
     </audio>
 
@@ -34,6 +40,8 @@
       var m1 = document.getElementById("music1");
       var m2 = document.getElementById("music2");
       var m3 = document.getElementById("music3");
+      var m4 = document.getElementById("music4");
+      var m5 = document.getElementById("music5");
       var icon = document.getElementById("icon");
       var pause = document.getElementById("pause");
       var play = true;
@@ -47,6 +55,12 @@
             m3.play();
           });
           m3.addEventListener("ended", function () {
+            m4.play();
+          });
+          m4.addEventListener("ended", function () {
+            m5.play();
+          });
+          m5.addEventListener("ended", function () {
             m1.play();
           });
           icon.classList.remove("fa-heart-crack");
@@ -57,6 +71,8 @@
           m1.pause();
           m2.pause();
           m3.pause();
+          m4.pause();
+          m5.pause();
           icon.classList.remove("fa-heart");
           icon.classList.add("fa-heart-crack");
           pause.innerHTML = "(Paused)";
